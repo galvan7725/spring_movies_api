@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MovieController {
 
     @GetMapping
-    public ResponseEntity<String> allMovies(){
-        return new ResponseEntity<String>("All movies",HttpStatus.OK);
+    public ResponseEntity<Object> allMovies(){
+        return new ResponseEntity<Object>("All movies",HttpStatus.OK);
     }
 }
